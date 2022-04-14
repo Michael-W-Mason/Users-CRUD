@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <h1>Add a New User</h1>
+    <a href="/">Home</a>
+    <form action="/edit_complete/{{user.id}}" method="post">
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" placeholder="{{user.first_name}}">
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" placeholder="{{user.last_name}}">
+        <label for="email">Email:</label>
+        <input type="text" name="email" placeholder="{{user.email}}">
+        <button type="submit">Edit Complete</button>
+    </form>
+</body>
+</html>
