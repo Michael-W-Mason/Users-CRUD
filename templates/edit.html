@@ -7,7 +7,7 @@
     <title>Edit</title>
 </head>
 <body>
-    <h1>Add a New User</h1>
+    <h1>Edit User {{user.id}}</h1>
     <a href="/">Home</a>
     <form action="/edit_complete/{{user.id}}" method="post">
         <label for="firstname">First Name:</label>
@@ -16,7 +16,8 @@
         <input type="text" name="lastname" placeholder="{{user.last_name}}">
         <label for="email">Email:</label>
         <input type="text" name="email" placeholder="{{user.email}}">
-        <button type="submit">Edit Complete</button>
+        <button type="submit">Update</button>
     </form>
+    <a href="/read_one/{{user.id}}">Show User</a>
 </body>
 </html>

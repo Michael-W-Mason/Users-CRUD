@@ -44,7 +44,7 @@ def edit_complete(id):
         "id" : id
     }
     User.edit_one(new_user_data)
-    return redirect("/")
+    return redirect(f"/read_one/{id}")
 
 @app.route("/delete/<int:id>")
 def delete(id):
